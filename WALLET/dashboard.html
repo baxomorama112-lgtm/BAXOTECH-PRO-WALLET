@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Wallet</title>
+  <style>
+    * { box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+    body { margin: 0; background: #eef6fb; color: #333; }
+    .header { background: linear-gradient(135deg, #4facfe, #00c6ff); padding: 20px; text-align: center; color: white; }
+    .container { max-width: 420px; margin: 40px auto; padding: 20px; }
+    .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    input, select { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; }
+    button { width: 100%; padding: 12px; margin-top: 15px; border: none; border-radius: 8px; background: #4facfe; color: white; font-size: 16px; cursor: pointer; }
+    button:hover { background: #339af0; }
+    h2, h3 { margin-top: 0; }
+    .text-center { text-align: center; }
+    .balance { font-size: 34px; font-weight: bold; color: #4facfe; text-align: center; margin: 15px 0; }
+    .package { display: flex; justify-content: space-between; align-items: center; background: #f5fbff; padding: 12px; border-radius: 8px; margin-top: 10px; }
+    .package span { font-size: 15px; }
+    .package button { width: auto; padding: 8px 14px; font-size: 14px; }
+    .link { text-align: center; margin-top: 15px; }
+    .link a { text-decoration: none; color: #4facfe; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h2>My Wallet</h2>
+</div>
+
+<div class="container">
+
+  <!-- WALLET BALANCE -->
+  <div class="card">
+    <p class="text-center">Wallet Balance</p>
+    <div class="balance">D 0.00</div>
+  </div>
+
+  <!-- BUY PACKAGES -->
+  <div class="card">
+    <h3>Buy Internet</h3>
+
+    <div class="package"><span>3 Hours</span><span>D 10</span><button>Buy</button></div>
+    <div class="package"><span>24 Hours</span><span>D 25</span><button>Buy</button></div>
+    <div class="package"><span>3 Days</span><span>D 75</span><button>Buy</button></div>
+    <div class="package"><span>1 Week</span><span>D 150</span><button>Buy</button></div>
+    <div class="package"><span>1 Month</span><span>D 300</span><button>Buy</button></div>
+  </div>
+
+  <div class="link"><a href="login.html">Logout</a></div>
+
+</div>
+
+</body>
+</html>

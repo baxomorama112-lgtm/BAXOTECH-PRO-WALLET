@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    * { box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+    body { margin: 0; background: #eef6fb; color: #333; }
+    .header { background: linear-gradient(135deg, #4facfe, #00c6ff); padding: 20px; text-align: center; color: white; }
+    .admin-container { max-width: 900px; margin: 30px auto; padding: 20px; }
+    .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    input, select { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; }
+    button { width: 100%; padding: 12px; margin-top: 15px; border: none; border-radius: 8px; background: #4facfe; color: white; font-size: 16px; cursor: pointer; }
+    button:hover { background: #339af0; }
+    h2, h3 { margin-top: 0; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .stat-box { background: #f5fbff; padding: 15px; border-radius: 10px; text-align: center; }
+    .stat-box h4 { margin: 5px 0; color: #555; }
+    .package { display: flex; justify-content: space-between; align-items: center; background: #f5fbff; padding: 12px; border-radius: 8px; margin-top: 10px; }
+    .package span { font-size: 15px; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Admin Dashboard</h2>
+</div>
+
+<div class="admin-container">
+
+  <!-- STATS -->
+  <div class="card">
+    <h3>System Overview</h3>
+    <div class="stats">
+      <div class="stat-box"><h4>Total Users</h4><strong>120</strong></div>
+      <div class="stat-box"><h4>Total Balance</h4><strong>D 12,500</strong></div>
+      <div class="stat-box"><h4>Today Sales</h4><strong>D 1,800</strong></div>
+    </div>
+  </div>
+
+  <!-- CREDIT USER -->
+  <div class="card">
+    <h3>Deposit to User Wallet</h3>
+    <select>
+      <option>Select User (Phone)</option>
+      <option>77123456</option>
+      <option>77654321</option>
+    </select>
+    <input type="number" placeholder="Amount (D)">
+    <input type="text" placeholder="Note (optional)">
+    <button>Deposit</button>
+  </div>
+
+  <!-- HOTSPOT PACKAGES -->
+  <div class="card">
+    <h3>Hotspot Packages</h3>
+    <div class="package"><span>3 Hours</span><span>D 10</span></div>
+    <div class="package"><span>24 Hours</span><span>D 25</span></div>
+    <div class="package"><span>3 Days</span><span>D 75</span></div>
+    <div class="package"><span>1 Week</span><span>D 150</span></div>
+    <div class="package"><span>1 Month</span><span>D 300</span></div>
+  </div>
+
+</div>
+
+</body>
+</html>
